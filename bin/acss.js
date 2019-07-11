@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const program = require('commander')
 const chalk = require('chalk')
-const watch = require('../lib/watch-wxss.js')
+const watch = require('../lib/watch-acss.js')
 
 program
   .version(require('../package').version)
@@ -16,7 +16,7 @@ program
     fs.stat(dir, (err, stats) => {
       if (err) console.log(chalk.yellow(err))
       else {
-        console.log(chalk.bgMagenta.white(' wxss is running... '))
+        console.log(chalk.bgMagenta.white('acss is running... '))
         watch(dir)
       }
     })
@@ -25,7 +25,7 @@ program
 program
   .on('--help', () => {
     console.log()
-    console.log(`  Run ${chalk.cyan(`wxss <command> --help`)} for detailed usage of given command.`)
+    console.log(`  Run ${chalk.cyan(`acss <command> --help`)} for detailed usage of given command.`)
     console.log()
   })
 
