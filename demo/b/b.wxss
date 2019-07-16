@@ -1,0 +1,10 @@
+.b {
+  width: 100%;
+}
+.b-title {
+  font-weight: bold;
+}
+.b a {
+  width: 100%;
+  height: 100px;
+}

@@ -7,16 +7,16 @@ $ npm install -g mini-less-cli
 ```
 ## 使用
 
-> src 为支付宝小程序开发根目录
-
+> demo 为开发目录
 ```
-$ acss ./src
+-a 选项生成支付宝acss
+$ mini-less -a ./demo
 ```
-> src1 为支付宝小程序开发根目录
-
 ```
-$ wxss ./src1
+-w 选项生成微信wxss
+$ mini-less -w ./demo
 ```
+> 项目会自动监听less文件变更并生成对应样式文件
 ### 如果觉得不错，请动动您的小拇指，star一下
 
 ## License
